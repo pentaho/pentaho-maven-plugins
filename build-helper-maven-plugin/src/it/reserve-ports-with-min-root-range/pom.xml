@@ -35,7 +35,7 @@
                 <portName>port2</portName>
                 <portName>port3</portName>
               </portNames>
-              <minPortNumber>800</minPortNumber>            
+              <minPortNumber>1024</minPortNumber>            
             </configuration>
           </execution>
         </executions>
