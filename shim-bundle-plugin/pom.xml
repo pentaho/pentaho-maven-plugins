@@ -5,10 +5,10 @@
   <parent>
     <groupId>org.pentaho.maven.plugins</groupId>
     <artifactId>maven-plugins</artifactId>
-    <version>1.20</version>
+    <version>1.22</version>
   </parent>
 
-  <groupId>com.pentaho</groupId>
+  <groupId>org.pentaho</groupId>
   <artifactId>shim-bundle-plugin</artifactId>
   <version>1.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
@@ -16,22 +16,22 @@
   <name>maven-dependency-resolver-plugin Maven Plugin</name>
 
   <scm>
-    <connection>scm:git:git@github.com:pentaho/pentaho-maven-plugins-ee.git</connection>
-    <url>https://github.com/pentaho/pentaho-maven-plugins-ee</url>
-    <developerConnection>scm:git:git@github.com:pentaho/pentaho-maven-plugins-ee.git</developerConnection>
+    <connection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</connection>
+    <url>https://github.com/pentaho/pentaho-maven-plugins</url>
+    <developerConnection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
     <repository>
-      <id>pentaho.private.release.repo</id>
-      <name>Pentaho Private Release Repository</name>
-      <url>${pentaho.private.release.repo}</url>
+      <id>pentaho.public.release.repo</id>
+      <name>Pentaho Public Release Repository</name>
+      <url>${pentaho.public.release.repo}</url>
     </repository>
     <snapshotRepository>
-      <id>pentaho.private.snapshot.repo</id>
-      <name>Pentaho Private Snapshot Repository</name>
-      <url>${pentaho.private.snapshot.repo}</url>
+      <id>pentaho.public.snapshot.repo</id>
+      <name>Pentaho Public Snapshot Repository</name>
+      <url>${pentaho.public.snapshot.repo}</url>
     </snapshotRepository>
   </distributionManagement>
 
