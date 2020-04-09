@@ -4,7 +4,7 @@
 
   <groupId>org.pentaho.maven.plugins</groupId>
   <artifactId>maven-plugins</artifactId>
-  <version>1.22-SNAPSHOT</version>
+  <version>1.22</version>
   <packaging>pom</packaging>
 
   <name>Pentaho Maven Plugins Parent</name>
@@ -14,7 +14,7 @@
     <connection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</connection>
     <url>https://github.com/pentaho/pentaho-maven-plugins</url>
     <developerConnection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>maven-plugins-1.22</tag>
   </scm>
 
   <distributionManagement>
