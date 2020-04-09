@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.pentaho.maven.plugins</groupId>
+    <artifactId>maven-plugins</artifactId>
+    <version>1.22</version>
+  </parent>
+
+  <groupId>org.pentaho</groupId>
+  <artifactId>shim-bundle-plugin</artifactId>
+  <version>1.1-SNAPSHOT</version>
+  <packaging>maven-plugin</packaging>
+
+  <name>maven-dependency-resolver-plugin Maven Plugin</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</connection>
+    <url>https://github.com/pentaho/pentaho-maven-plugins</url>
+    <developerConnection>scm:git:git@github.com:pentaho/pentaho-maven-plugins.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>pentaho.public.release.repo</id>
+      <name>Pentaho Public Release Repository</name>
+      <url>${pentaho.public.release.repo}</url>
+    </repository>
+    <snapshotRepository>
+      <id>pentaho.public.snapshot.repo</id>
+      <name>Pentaho Public Snapshot Repository</name>
+      <url>${pentaho.public.snapshot.repo}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <org.apache.maven.version>3.0</org.apache.maven.version>
+    <org.apache.maven.plugin-tools.version>3.4</org.apache.maven.plugin-tools.version>
+    <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
+    <org.apache.maven.shared.version>0.9.1</org.apache.maven.shared.version>
+    <org.apache.maven.maven-resolver-provider>3.5.0</org.apache.maven.maven-resolver-provider>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>${org.apache.maven.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-core</artifactId>
+      <version>${org.apache.maven.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-compat</artifactId>
+      <version>${org.apache.maven.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-artifact</artifactId>
+      <version>${org.apache.maven.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-model</artifactId>
+      <version>${org.apache.maven.version}</version>
+    </dependency>
+    <!-- dependencies to annotations -->
+    <dependency>
+      <groupId>org.apache.maven.plugin-tools</groupId>
+      <artifactId>maven-plugin-annotations</artifactId>
+      <version>${org.apache.maven.plugin-tools.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.shared</groupId>
+      <artifactId>maven-artifact-transfer</artifactId>
+      <version>${org.apache.maven.shared.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-resolver-provider</artifactId>
+      <version>${org.apache.maven.maven-resolver-provider}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-component-metadata</artifactId>
+        <version>1.7.1</version>
+        <executions>
+          <execution>
+            <id>process-classes</id>
+            <goals>
+              <goal>generate-metadata</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <!--<plugins> -->
+    <!--<plugin> -->
+    <!--<groupId>org.apache.maven.plugins</groupId> -->
+    <!--<artifactId>maven-compiler-plugin</artifactId> -->
+    <!--<version>${maven-compiler-plugin.version}</version> -->
+    <!--<configuration> -->
+    <!--<source>1.8</source> -->
+    <!--<target>1.8</target> -->
+    <!--</configuration> -->
+    <!--</plugin> -->
+    <!--</plugins> -->
+  </build>
+
+</project>
