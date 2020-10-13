@@ -41,7 +41,7 @@
     <maven-plugin-testing-harness.version>3.3.0</maven-plugin-testing-harness.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
 
     <gmavenplus-plugin.version>1.5</gmavenplus-plugin.version>
     <maven-plugin-plugin.version>3.4</maven-plugin-plugin.version>
