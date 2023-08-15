@@ -37,7 +37,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <org.apache.maven.version>3.0</org.apache.maven.version>
+    <org.apache.maven.version>3.8.1</org.apache.maven.version>
     <org.apache.maven.plugin-tools.version>3.4</org.apache.maven.plugin-tools.version>
     <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
     <org.apache.maven.shared.version>0.9.1</org.apache.maven.shared.version>
